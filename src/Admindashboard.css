@@ -1,0 +1,556 @@
+/* =========================================
+   COMMON
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+}
+
+
+/* =========================================
+   ADMIN LOGIN PAGE
+========================================= */
+
+.admin-login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+.admin-login-box {
+    width: 400px;
+    max-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.admin-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+.admin-login-box h1 {
+    margin: 10px 0 8px;
+    color: #222;
+    font-size: 30px;
+}
+
+.admin-login-box > p {
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   LOGIN FORM
+========================================= */
+
+.admin-login-box form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.admin-login-box label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.admin-login-box input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d5d9e2;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.admin-login-box input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.admin-login-box button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-login-box button:hover {
+    background: #5568d9;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   ADMIN DASHBOARD
+========================================= */
+
+.admin-dashboard {
+    min-height: 100vh;
+    padding: 30px 40px;
+    background: #f4f7fb;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-header {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admin-header h1 {
+    margin: 0 0 7px;
+    color: #222;
+    font-size: 28px;
+}
+
+.admin-header p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* =========================================
+   LOGOUT BUTTON
+========================================= */
+
+.logout-btn {
+    border: none;
+    padding: 12px 22px;
+    background: #e53935;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.stat-card h2 {
+    margin: 0 0 5px;
+    font-size: 28px;
+    color: #222;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ADMIN SECTION
+========================================= */
+
+.admin-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #222;
+    font-size: 22px;
+}
+
+.section-title span {
+    background: #eef2ff;
+    color: #667eea;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   EMPTY BOX
+========================================= */
+
+.empty-box {
+    padding: 45px 20px;
+    text-align: center;
+    border: 2px dashed #d9ddea;
+    border-radius: 12px;
+}
+
+.empty-box h3 {
+    margin: 0 0 8px;
+    color: #444;
+}
+
+.empty-box p {
+    margin: 0;
+    color: #888;
+}
+
+
+/* =========================================
+   BOOKING TABLE
+========================================= */
+
+.booking-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #667eea;
+    color: white;
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.admin-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.admin-table tbody tr:hover {
+    background: #f8f9ff;
+}
+
+
+/* =========================================
+   PAYMENT STATUS
+========================================= */
+
+.paid-status {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: #e8f7ee;
+    color: #168344;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PAY NOW
+========================================= */
+
+.pay-now-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pay-now-btn:hover {
+    background: #5568d9;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+    border: none;
+    padding: 8px 13px;
+    border-radius: 6px;
+    background: #ef4444;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+
+/* =========================================
+   ENQUIRY LIST
+========================================= */
+
+.enquiry-admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-enquiry-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #e4e7ef;
+    border-radius: 12px;
+    background: #fafbff;
+}
+
+.enquiry-content {
+    flex: 1;
+}
+
+.customer-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.customer-name h3 {
+    margin: 0;
+    color: #222;
+}
+
+.customer-name span {
+    color: #888;
+    font-size: 12px;
+}
+
+.admin-enquiry-card p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.admin-enquiry-card strong {
+    color: #333;
+}
+
+.customer-message {
+    margin-top: 15px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+}
+
+.customer-message p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .admin-dashboard {
+        padding: 20px;
+    }
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-header {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-dashboard {
+        padding: 15px;
+    }
+
+    .admin-header {
+        flex-direction: column;
+    }
+
+    .logout-btn {
+        width: 100%;
+    }
+
+    .admin-section {
+        padding: 15px;
+    }
+
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .admin-enquiry-card {
+        flex-direction: column;
+    }
+
+    .admin-enquiry-card .delete-btn {
+        width: 100%;
+    }
+
+    .admin-login-box {
+        padding: 30px 20px;
+    }
+
+}
+
+/* =========================================
+   BOOKING RATING & REVIEW
+========================================= */
+
+.booking-rating-box {
+    min-width: 190px;
+    max-width: 240px;
+    padding: 12px;
+    background: #fffaf0;
+    border: 1px solid #f0dfb0;
+    border-radius: 10px;
+    white-space: normal;
+}
+
+.booking-rating-stars {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #f5a623;
+    margin-bottom: 4px;
+}
+
+.booking-rating-number {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.booking-rating-review {
+    padding: 8px;
+    background: white;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.booking-rating-review strong {
+    color: #333;
+}
+
+.booking-rating-review p {
+    margin: 5px 0 0;
+    color: #666;
+    line-height: 1.4;
+    white-space: normal;
+}
+
+.booking-rating-box small {
+    display: block;
+    margin-top: 8px;
+    color: #999;
+    font-size: 10px;
+}
+
+.no-rating {
+    display: inline-block;
+    padding: 8px 10px;
+    background: #f3f4f6;
+    color: #888;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
