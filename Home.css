@@ -1,0 +1,308 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    font-family: Arial, sans-serif;
+    background: #f8f9fc;
+    color: #172b4d;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #eef5ff, #ffffff);
+    gap: 50px;
+}
+
+.hero-content {
+    width: 48%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #12345b;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #12345b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #f4b400;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-home {
+    text-align: center;
+    padding: 70px 15%;
+    background: white;
+}
+
+.about-home h2 {
+    font-size: 34px;
+    color: #12345b;
+    margin-bottom: 20px;
+}
+
+.about-home p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+    padding: 70px 7%;
+    text-align: center;
+    background: #f8f9fc;
+}
+
+.features h2 {
+    font-size: 34px;
+    color: #12345b;
+    margin-bottom: 45px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    color: #12345b;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ================= HOW IT WORKS ================= */
+
+.how-section {
+    text-align: center;
+    padding: 70px 8%;
+    background: white;
+}
+
+.how-section h2 {
+    font-size: 34px;
+    color: #12345b;
+    margin-bottom: 45px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.step {
+    width: 30%;
+    padding: 30px;
+    border-radius: 15px;
+    background: #f8f9fc;
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-6px);
+}
+
+.step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #12345b;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: #12345b;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* ================= CTA SECTION ================= */
+
+.home-cta {
+    margin: 50px 7%;
+    padding: 55px 30px;
+    text-align: center;
+    border-radius: 18px;
+    background: #12345b;
+    color: white;
+}
+
+.home-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.home-cta p {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #e5e5e5;
+}
+
+.home-cta button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #f4b400;
+    color: #12345b;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-cta button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 5%;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .about-home {
+        padding: 50px 8%;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .home-cta {
+        margin: 30px 5%;
+    }
+
+    .home-cta h2 {
+        font-size: 26px;
+    }
+}

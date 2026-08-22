@@ -1,0 +1,673 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   BOOKING PAGE
+========================================= */
+
+.booking-page {
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    padding: 50px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BOOKING CONTAINER
+========================================= */
+
+.booking-container {
+    width: 100%;
+
+    max-width: 1000px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+   
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.booking-container h1{
+    position: relative;
+    left: 100%;
+}
+
+
+/* =========================================
+   SELECTED ROOM
+========================================= */
+
+.selected-room {
+    background: #222;
+
+    color: white;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+}
+
+
+.selected-room img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    display: block;
+}
+
+
+.selected-room h2 {
+    font-size: 28px;
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+
+   
+}
+
+
+.selected-room p {
+    font-size: 16px;
+
+    margin: 15px 0;
+
+    color: #e5e5e5;
+
+    line-height: 1.5;
+}
+
+
+.selected-room h3 {
+    font-size: 24px;
+
+    margin-top: 25px;
+}
+
+/* =========================================
+   PROFESSIONAL ANIMATIONS
+========================================= */
+
+.booking-container {
+    animation: bookingFadeIn 0.6s ease-out;
+}
+
+.selected-room {
+    animation: roomSlideIn 0.7s ease-out;
+}
+
+.booking-form {
+    animation: formSlideIn 0.7s ease-out;
+}
+
+
+/* Container animation */
+
+@keyframes bookingFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Room details animation */
+
+@keyframes roomSlideIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Form animation */
+
+@keyframes formSlideIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================
+   PROFESSIONAL INPUT EFFECT
+========================================= */
+
+.booking-form input,
+.booking-form textarea {
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   PROFESSIONAL BUTTON
+========================================= */
+
+.booking-form button {
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.booking-form button:hover:not(:disabled) {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.28);
+}
+
+.booking-form button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   BOOKING FORM
+========================================= */
+
+.booking-form {
+    padding: 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.booking-form h1 {
+    text-align: center;
+
+    font-size: 32px;
+
+    color: #222;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.booking-form form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.booking-form label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.booking-form input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    background: white;
+
+    color: #333;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.booking-form textarea {
+    width: 100%;
+
+    min-height: 110px;
+
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+
+    resize: vertical;
+
+    transition: 0.3s;
+
+    background: white;
+
+    color: #333;
+}
+
+
+/* =========================================
+   INPUT + TEXTAREA FOCUS
+========================================= */
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+    color: #999;
+}
+
+
+/* =========================================
+   BOOKING BUTTON
+========================================= */
+
+.booking-form button {
+    display: block;
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 5px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.booking-form button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   DISABLED BUTTON
+========================================= */
+
+.booking-form button:disabled {
+    background: #9ca3af;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   NO ROOM
+========================================= */
+
+.no-room {
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.no-room h2 {
+    font-size: 30px;
+
+    color: #333;
+}
+
+
+.no-room button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.no-room button:hover {
+    background: #444;
+}
+
+
+/* =========================================
+   TABLET
+   601px - 900px
+========================================= */
+
+@media (max-width: 900px) {
+
+    .booking-page {
+        padding: 40px 20px;
+    }
+
+    .booking-container {
+        max-width: 750px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .selected-room {
+        padding: 28px;
+    }
+
+    .selected-room img {
+        height: 220px;
+    }
+
+    .selected-room h2 {
+        font-size: 24px;
+    }
+
+    .selected-room p {
+        font-size: 14px;
+    }
+
+    .selected-room h3 {
+        font-size: 21px;
+    }
+
+    .booking-form {
+        padding: 30px;
+    }
+
+    .booking-form h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   600px கீழே
+========================================= */
+
+@media (max-width: 600px) {
+
+    .booking-page {
+        min-height: 100vh;
+
+        padding: 25px 15px;
+
+        align-items: flex-start;
+    }
+
+    .booking-container {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        border-radius: 15px;
+    }
+
+
+    /* Room comes first */
+
+    .selected-room {
+        padding: 22px;
+    }
+
+    .selected-room img {
+        height: 220px;
+
+        margin-bottom: 20px;
+    }
+
+    .selected-room h2 {
+        font-size: 23px;
+
+        margin-bottom: 15px;
+    }
+
+    .selected-room p {
+        font-size: 14px;
+
+        margin: 10px 0;
+    }
+
+    .selected-room h3 {
+        font-size: 21px;
+
+        margin-top: 20px;
+    }
+
+
+    /* Form */
+
+    .booking-form {
+        padding: 25px 20px;
+    }
+
+    .booking-form h1 {
+        font-size: 25px;
+
+        margin-bottom: 25px;
+    }
+
+    .booking-form label {
+        font-size: 14px;
+    }
+
+    .booking-form input,
+    .booking-form textarea {
+        font-size: 14px;
+
+        padding: 12px;
+    }
+
+    .booking-form button {
+        font-size: 16px;
+
+        padding: 14px;
+    }
+}
+
+
+/* =========================================
+   SMALL / SMART MOBILE
+   400px கீழே
+========================================= */
+
+@media (max-width: 400px) {
+
+    .booking-page {
+        padding: 20px 10px;
+    }
+
+    .booking-container {
+        border-radius: 12px;
+    }
+
+    .selected-room {
+        padding: 18px;
+    }
+
+    .selected-room img {
+        height: 190px;
+
+        border-radius: 10px;
+    }
+
+    .selected-room h2 {
+        font-size: 21px;
+    }
+
+    .selected-room p {
+        font-size: 13px;
+    }
+
+    .selected-room h3 {
+        font-size: 20px;
+    }
+
+    .booking-form {
+        padding: 20px 15px;
+    }
+
+    .booking-form h1 {
+        font-size: 22px;
+    }
+
+    .booking-form input,
+    .booking-form textarea {
+        font-size: 13px;
+    }
+
+    .booking-form button {
+        font-size: 15px;
+
+        padding: 13px;
+    }
+
+    .no-room h2 {
+        font-size: 24px;
+    }
+}
