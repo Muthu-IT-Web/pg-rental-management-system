@@ -6,7 +6,7 @@ require("dotenv").config();
 // Routes
 const bookingRoutes = require("./routes/bookingRoutes");
 const ratingRoutes = require("./routes/ratingRoutes");
-const paymentRoutes = require("./paymentRoutes");
+const paymentRoutes = require("./PaymentRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 const app = express();
 
