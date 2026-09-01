@@ -1,0 +1,416 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.nav {
+    width: 100%;
+    min-height: 80px;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.nav1 img {
+    width: 150px;
+    height: 65px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 28px;
+
+    flex-wrap: nowrap;
+}
+
+.navbar a {
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+
+    white-space: nowrap;
+
+    position: relative;
+
+    padding: 10px 0;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.navbar a:hover {
+    color: #2563eb;
+}
+
+
+/* Underline */
+
+.navbar a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 2px;
+
+    width: 0;
+    height: 2px;
+
+    background: #2563eb;
+
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER BUTTON
+========================================= */
+
+.navbar a:last-child {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 11px 20px;
+
+    border-radius: 7px;
+
+    transition: all 0.3s ease;
+}
+
+.navbar a:last-child::after {
+    display: none;
+}
+
+.navbar a:last-child:hover {
+    background: #1d4ed8;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   LARGE LAPTOP / DESKTOP
+   1200px +
+========================================= */
+
+@media (min-width: 1200px) {
+
+    .nav {
+        padding: 0 60px;
+    }
+
+    .navbar {
+        gap: 32px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   LAPTOP
+   992px - 1199px
+========================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .nav {
+        padding: 0 30px;
+    }
+
+    .nav1 img {
+        width: 135px;
+        height: 60px;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .navbar a:last-child {
+        padding: 10px 16px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 991px
+========================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .nav {
+        min-height: 75px;
+        padding: 0 20px;
+    }
+
+    .nav1 img {
+        width: 120px;
+        height: 55px;
+    }
+
+    .navbar {
+        gap: 14px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 8px 0;
+    }
+
+    .navbar a:last-child {
+        padding: 9px 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL TABLET / LARGE MOBILE
+   576px - 767px
+========================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .nav {
+        min-height: auto;
+
+        padding: 12px 20px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .nav1 {
+        justify-content: center;
+    }
+
+    .nav1 img {
+        width: 125px;
+        height: 55px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px 18px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+
+        padding: 6px 0;
+    }
+
+    .navbar a:last-child {
+        padding: 8px 14px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   480px - 575px
+========================================= */
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+    .nav {
+        min-height: auto;
+
+        padding: 10px 15px;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .nav1 img {
+        width: 120px;
+        height: 50px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 5px 14px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+
+        padding: 5px 0;
+    }
+
+    .navbar a:last-child {
+        padding: 7px 12px;
+
+        border-radius: 6px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   Below 480px
+========================================= */
+
+@media (max-width: 479px) {
+
+    .nav {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 10px 12px;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .nav1 {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .nav1 img {
+        width: 110px;
+        height: 48px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 4px 10px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+
+        letter-spacing: 0;
+
+        padding: 5px 0;
+    }
+
+    .navbar a:last-child {
+        padding: 7px 10px;
+
+        border-radius: 5px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Below 360px
+========================================= */
+
+@media (max-width: 359px) {
+
+    .nav {
+        padding: 8px 10px;
+    }
+
+    .nav1 img {
+        width: 100px;
+        height: 44px;
+    }
+
+    .navbar {
+        gap: 3px 8px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+    }
+
+    .navbar a:last-child {
+        padding: 6px 8px;
+    }
+}

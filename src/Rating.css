@@ -1,0 +1,314 @@
+/* =========================================
+   RATING PAGE
+========================================= */
+
+.rating-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background: #f5f7fb;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   RATING CARD
+========================================= */
+
+.rating-card {
+    width: 100%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.rating-card h1 {
+    text-align: center;
+
+    margin: 0 0 8px;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.rating-subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.rating-card label {
+    display: block;
+
+    margin-top: 18px;
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   INPUT + TEXTAREA
+========================================= */
+
+.rating-card input,
+.rating-card textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.rating-card input:focus,
+.rating-card textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.rating-card textarea {
+    resize: vertical;
+
+    min-height: 110px;
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.stars {
+    display: flex;
+
+    gap: 8px;
+
+    margin: 10px 0;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   STAR BUTTON
+========================================= */
+
+.star-button {
+    border: none;
+
+    background: none;
+
+    font-size: 38px;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.submit-rating {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.submit-rating:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   TABLET
+   601px - 900px
+========================================= */
+
+@media (max-width: 900px) {
+
+    .rating-page {
+        padding: 35px 20px;
+    }
+
+    .rating-card {
+        max-width: 520px;
+
+        padding: 30px;
+    }
+
+    .rating-card h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   601px கீழே
+========================================= */
+
+@media (max-width: 600px) {
+
+    .rating-page {
+        min-height: 100vh;
+
+        padding: 25px 15px;
+
+        align-items: flex-start;
+    }
+
+    .rating-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px 20px;
+
+        border-radius: 14px;
+    }
+
+    .rating-card h1 {
+        font-size: 24px;
+    }
+
+    .rating-subtitle {
+        font-size: 14px;
+
+        margin-bottom: 25px;
+    }
+
+    .rating-card label {
+        font-size: 14px;
+    }
+
+    .rating-card input,
+    .rating-card textarea {
+        font-size: 14px;
+
+        padding: 11px;
+    }
+
+    .stars {
+        justify-content: center;
+
+        gap: 6px;
+    }
+
+    .star-button {
+        font-size: 34px;
+    }
+
+    .submit-rating {
+        font-size: 15px;
+
+        padding: 12px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   400px கீழே
+========================================= */
+
+@media (max-width: 400px) {
+
+    .rating-page {
+        padding: 20px 10px;
+    }
+
+    .rating-card {
+        padding: 22px 15px;
+    }
+
+    .rating-card h1 {
+        font-size: 22px;
+    }
+
+    .rating-subtitle {
+        font-size: 13px;
+    }
+
+    .star-button {
+        font-size: 30px;
+    }
+
+    .stars {
+        gap: 4px;
+    }
+}
