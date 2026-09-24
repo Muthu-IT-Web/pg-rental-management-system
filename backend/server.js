@@ -8,6 +8,8 @@ const bookingRoutes = require("./routes/bookingRoutes");
 const ratingRoutes = require("./routes/ratingRoutes");
 const paymentRoutes = require("./PaymentRoutes");
 const contactRoutes = require("./routes/contactRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+const userRoutes = require("./routes/userRoutes");
 const app = express();
 
 // Middleware
@@ -21,6 +23,8 @@ app.use("/api/bookings", bookingRoutes);
 app.use("/api/ratings", ratingRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/contacts", contactRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/users", userRoutes);
 // Test Route
 app.get("/", (req, res) => {
     res.send("PG Rental Backend is Running!");
